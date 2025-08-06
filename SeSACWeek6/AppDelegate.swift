@@ -13,6 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        
+        
+        //ios15이상
+        let standard = UINavigationBarAppearance()
+        standard.backgroundColor = .yellow
+        standard.titleTextAttributes = [.foregroundColor: UIColor.red]
+        
+        //모든 객체에 대해 적용을 하겠다
+        UINavigationBar.appearance().scrollEdgeAppearance = standard
+        UINavigationBar.appearance().standardAppearance = standard
+
+        
+        
+        
         // Override point for customization after application launch.
         return true
     }
