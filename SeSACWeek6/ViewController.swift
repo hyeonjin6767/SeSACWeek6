@@ -7,6 +7,12 @@
 
 import UIKit
 
+
+
+import MyKeyboard //다른 모듈 사용 가능하게 
+
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,6 +22,11 @@ class ViewController: UIViewController {
         //네비/탭바의 Appearance 개념 등장 : standard(스크롤이 되는 화면의 ui) & scrollEdge(스크롤이 안되는 화면에 대한 ui)
         navigationController?.navigationBar.tintColor = .yellow
 
+        
+        
+        
+        
+        
     }
 
 

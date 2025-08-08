@@ -29,6 +29,30 @@ final class MarketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        print(total(a: 3, b: 5))
+        print(total(a: 3.5, b: 3.8583))
+        
+        //Jack에는 어떤 타입이 들어가도 괜춘
+        total(a: 67, b: 34)
+        total(a: 2.35, b: 4.535)
+        total(a: 3, b: 3)
+        
+        //UIView관련은 다 들어가도 괜춘
+        setCornerRadius(a: view)
+        
+        //어떤 타입도 괜찮은 더미데이터
+        DummyData(title: "dgg", sub: 777)
+        DummyData(title: view, sub: 9798)
+        
+        //우리가 쓰던 배열도 제네릭이었음!
+        let a: [Int] = [1,2,3] //위아래 원래 같은 의미
+        let b: Array<Int> = [8]
+        //어레이도 구조체라 재정의도 가능:  인스턴스 생성도 가능
+        let c = Array<Int>()
+        
+
+        
         callRequest()
         configureHierarchy()
         configureLayout()
